@@ -23,7 +23,7 @@ int main(int argc, char **argv, char **environ)
 	{
 		line = read_line();
 		argv = splits(line, delim);
-		command = arg_path(argv, tokens);
+		command = args_path(argv, tokens);
 		if (command == NULL)
 			execute(argv);
 		free(line);
